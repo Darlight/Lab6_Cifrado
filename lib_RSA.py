@@ -1,9 +1,5 @@
 import rsa
 
-p = int(input("Ingrese el numero p: "))
-q = int(input("Ingrese el numero q: "))
-m = input("Ingrese el mensaje a encriptar: ")
-
 # Se generan las llaves de bob
 (bob_public_key, bob_private_key) = rsa.newkeys(256)
 print("Llave publica de Bob: ", bob_public_key.n)
